@@ -6,8 +6,6 @@ public class WorkForce extends Person{
     private String position;
     private int salary;
 
-//-----------------------------------------------------------------------------------
-
     public WorkForce() {
     }
 
@@ -18,12 +16,10 @@ public class WorkForce extends Person{
         this.salary = salary;
     }
 
-//----------------------------------------------------------------------------------
-
-
     public void setEducation(String education) {
         this.education = education;
     }
+
     public String getEducation() {
         return education;
     }
@@ -31,6 +27,7 @@ public class WorkForce extends Person{
     public void setSpecialty(String specialty) {
         this.specialty = specialty;
     }
+
     public String getSpecialty() {
         return specialty;
     }
@@ -38,6 +35,7 @@ public class WorkForce extends Person{
     public void setPosition(String position) {
         this.position = position;
     }
+
     public String getPosition() {
         return position;
     }
@@ -45,6 +43,7 @@ public class WorkForce extends Person{
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
     public int getSalary() {
         return salary;
     }

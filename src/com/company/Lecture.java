@@ -4,8 +4,6 @@ public class Lecture extends Lesson {
     private String topic;
     private String required_time;
 
-//-----------------------------------------------------------------------------------
-
     public Lecture() {
     }
 
@@ -15,12 +13,10 @@ public class Lecture extends Lesson {
 
     }
 
-//----------------------------------------------------------------------------------
-
-
     public void setTopic(String topic) {
         this.topic = topic;
     }
+
     public String getTopic() {
         return topic;
     }
@@ -28,6 +24,7 @@ public class Lecture extends Lesson {
     public void setRequired_time(String required_time) {
         this.required_time = required_time;
     }
+
     public String getRequired_time() {
         return required_time;
     }

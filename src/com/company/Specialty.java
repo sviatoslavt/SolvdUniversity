@@ -1,9 +1,19 @@
 package com.company;
 
 public enum Specialty {
-        ECONOMY,
-        MARKETING,
-        COMPUTER_SCIENCE,
-        POLITOLOGY,
-        PHILOLOGY
+        ECONOMY("economy"),
+        MARKETING("marketing"),
+        COMPUTER_SCIENCE("computer science"),
+        POLITOLOGY("politology"),
+        PHILOLOGY("philology");
+
+        private final String value;
+
+        Specialty(String value){
+                this.value = value;
+        }
+
+        public String getValue(){
+                return value;
+        }
 }

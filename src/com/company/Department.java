@@ -5,8 +5,6 @@ public class Department {
     private String specialty;
     private int number_of_groups;
 
-//-----------------------------------------------------------------------------------
-
     public Department() {
     }
 
@@ -16,12 +14,10 @@ public class Department {
         this.number_of_groups = number_of_groups;
     }
 
-//----------------------------------------------------------------------------------
-
-
     public void setName_of_department(String name_of_department) {
         this.name_of_department = name_of_department;
     }
+
     public String getName_of_department() {
         return name_of_department;
     }
@@ -29,6 +25,7 @@ public class Department {
     public void setSpecialty(String specialty) {
         this.specialty = specialty;
     }
+
     public String getSpecialty() {
         return specialty;
     }
@@ -36,6 +33,7 @@ public class Department {
     public void setNumber_of_groups(int number_of_groups) {
         this.number_of_groups = number_of_groups;
     }
+
     public int getNumber_of_groups() {
         return number_of_groups;
     }

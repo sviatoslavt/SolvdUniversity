@@ -5,10 +5,8 @@ public class Student extends Person{
     private int record_book_number;
     private String specialty;
     private String form_of_education;
-    private String basis; //платна чи державна форма навчання
+    private String basis; //form of education
     private int submitted_works;
-
-//-----------------------------------------------------------------------------------
 
     public Student() {
     }
@@ -22,11 +20,10 @@ public class Student extends Person{
         this.submitted_works = submitted_works;
     }
 
-//----------------------------------------------------------------------------------
-
     public void setGroup_number(int group_number){
         this.group_number = group_number;
     }
+
     public int getGroup_number() {
         return group_number;
     }
@@ -34,6 +31,7 @@ public class Student extends Person{
     public void setRecord_book_number(int record_book_number) {
         this.record_book_number = record_book_number;
     }
+
     public int getRecord_book_number() {
         return record_book_number;
     }
@@ -41,6 +39,7 @@ public class Student extends Person{
     public void setSpecialty(String specialty) {
         this.specialty = specialty;
     }
+
     public String getSpecialty() {
         return specialty;
     }
@@ -48,6 +47,7 @@ public class Student extends Person{
     public void setForm_of_education(String form_of_education) {
         this.form_of_education = form_of_education;
     }
+
     public String getForm_of_education() {
         return form_of_education;
     }
@@ -55,6 +55,7 @@ public class Student extends Person{
     public void setBasis(String basis) {
         this.basis = basis;
     }
+
     public String getBasis() {
         return basis;
     }
@@ -62,6 +63,7 @@ public class Student extends Person{
     public void setSubmitted_works(int submitted_works) {
         this.submitted_works = submitted_works;
     }
+
     public int getSubmitted_works() {
         return submitted_works;
     }

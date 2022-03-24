@@ -1,10 +1,9 @@
 package com.company;
 
 public class Teacher extends WorkForce{
-    private String subjects; //які предмети викладає
+    private String subjects;
     private String department;
 
-//-----------------------------------------------------------------------------------
 
     public Teacher() {
     }
@@ -14,8 +13,6 @@ public class Teacher extends WorkForce{
         this.department = department;
 
     }
-
-//----------------------------------------------------------------------------------
 
     public void setSubjects(String subjects){
         this.subjects = subjects;
@@ -35,9 +32,5 @@ public class Teacher extends WorkForce{
         return "subjects: " + subjects + "\n" +
                 " department: " + department + "\n";
     }
-
-//----------------------------------------------------------------------------------
-
-
 
 }

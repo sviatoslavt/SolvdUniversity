@@ -5,8 +5,6 @@ public abstract class Lesson {
     private int lessons_per_week;
     private Teacher teacher;
 
-//-----------------------------------------------------------------------------------
-
     public Lesson() {
 
     }
@@ -16,7 +14,6 @@ public abstract class Lesson {
         this.lessons_per_week = lessons_per_week;
         this.teacher = teacher;
     }
-//-----------------------------------------------------------------------------------
 
     public void setName_of_subject(String name_of_subject) {
         this.name_of_subject = name_of_subject;

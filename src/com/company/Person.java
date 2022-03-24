@@ -5,7 +5,6 @@ public abstract class Person {
     private String birthday;
     private String phone_number;
 
-//-----------------------------------------------------------------------------------
 
     public Person() {
     }
@@ -15,8 +14,6 @@ public abstract class Person {
         this.birthday = birthday;
         this.phone_number = phone_number;
     }
-
-//----------------------------------------------------------------------------------
 
     public void setFull_name(String full_name) {
         this.full_name = full_name;

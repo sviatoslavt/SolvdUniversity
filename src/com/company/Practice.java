@@ -5,8 +5,6 @@ public class Practice extends Lesson{
     private String task;
     private String required_time;
 
-//-----------------------------------------------------------------------------------
-
     public Practice() {
     }
 
@@ -15,8 +13,6 @@ public class Practice extends Lesson{
         this.task = task;
         this.required_time = required_time;
     }
-
-//----------------------------------------------------------------------------------
 
     public void setTopic(String topic) {
         this.topic = topic;
