@@ -1,46 +1,47 @@
 package com.company;
+import com.company.Enums.Specialty;
 
 public class Department {
-    private String name_of_department;
-    private String specialty;
-    private int number_of_groups;
+    private String nameDepartment;
+    private Specialty specialty;
+    private int numberGroups;
 
     public Department() {
     }
 
-    public Department(String name_of_department, String specialty, int number_of_groups) {
-        this.name_of_department = name_of_department;
-        this.specialty = specialty;
-        this.number_of_groups = number_of_groups;
+    public Department(String nameDepartment, String specialty, int numberGroups) {
+        this.nameDepartment = nameDepartment;
+        this.specialty = Specialty.valueOf(specialty);
+        this.numberGroups = numberGroups;
     }
 
-    public void setName_of_department(String name_of_department) {
-        this.name_of_department = name_of_department;
+    public void setNameDepartment(String nameDepartment) {
+        this.nameDepartment = nameDepartment;
     }
 
-    public String getName_of_department() {
-        return name_of_department;
+    public String getNameDepartment() {
+        return nameDepartment;
     }
 
     public void setSpecialty(String specialty) {
-        this.specialty = specialty;
+        this.specialty = Specialty.valueOf(specialty);
     }
 
     public String getSpecialty() {
-        return specialty;
+        return String.valueOf(specialty);
     }
 
-    public void setNumber_of_groups(int number_of_groups) {
-        this.number_of_groups = number_of_groups;
+    public void setNumberGroups(int numberGroups) {
+        this.numberGroups = numberGroups;
     }
 
-    public int getNumber_of_groups() {
-        return number_of_groups;
+    public int getNumberGroups() {
+        return numberGroups;
     }
 
     public String toString() {
-        return "name of department: " + name_of_department + "\n" +
+        return "name of department: " + nameDepartment + "\n" +
                 " specialty: " + specialty + "\n" +
-                " number of groups: " + number_of_groups;
+                " number of groups: " + numberGroups;
     }
 }

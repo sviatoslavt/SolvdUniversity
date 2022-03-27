@@ -4,30 +4,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student(541,234,"Computer science","Full-time education","State basis",2);
-        int submitted_works = student1.getSubmitted_works();
+       Student student1 = new Student(541,234,"Computer science",
+               "Full-time education","State basis",2,0);
+       student1.checkSubmittedWorks();
 
+       Teacher teacher1 = new Teacher("Mr. John", "Higher",
+               "Teacher of mathematics", "Teacher", 10000, 2,
+               0,"20/05/1995","+380951059488" );
+       teacher1.checkBonus();
 
-        switch (submitted_works){
-            case submitted_works <= 1:
-                System.out.println("The student: " + student1.getRecord_book_number() + " not certified and passed: " + submitted_works + " works.");
-                break;
-
-            case submitted_works == 2:
-                System.out.println("The student: " + student1.getRecord_book_number() + " rating: 3 and passed: " + submitted_works + " works.");
-                break;
-
-            case submitted_works == 3:
-                System.out.println("The student: " + student1.getRecord_book_number() + " rating: 4 and passed: " + submitted_works + " works.");
-                break;
-
-            case submitted_works >= 4:
-                System.out.println("The student: " + student1.getRecord_book_number() + " rating: 5 and passed: " + submitted_works + " works.");
-                break;
-
-            default:
-                break;
-        }
+       Accountant accountant1 = new Accountant("Once a month","Higher",
+               "Accounting activities","Accountant",15000,10,0,
+               "Rosy Adamson", "08/01/1990","+380951111111");
+       accountant1.stipendPayment();
 
     }
 }

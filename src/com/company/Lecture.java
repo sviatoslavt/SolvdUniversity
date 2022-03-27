@@ -1,15 +1,16 @@
 package com.company;
 
-public class Lecture extends Lesson {
+public final class Lecture extends Lesson {
     private String topic;
-    private String required_time;
+    private String requiredTime;
 
     public Lecture() {
+
     }
 
-    public Lecture(String topic,String required_time) {
+    public Lecture(String topic,String requiredTime) {
         this.topic = topic;
-        this.required_time = required_time;
+        this.requiredTime = requiredTime;
 
     }
 
@@ -21,16 +22,16 @@ public class Lecture extends Lesson {
         return topic;
     }
 
-    public void setRequired_time(String required_time) {
-        this.required_time = required_time;
+    public void setRequiredTime(String requiredTime) {
+        this.requiredTime = requiredTime;
     }
 
-    public String getRequired_time() {
-        return required_time;
+    public String getRequiredTime() {
+        return requiredTime;
     }
 
     public String toString() {
         return "topic: " + topic + "\n" +
-                " required time: " + required_time;
+                " required time: " + requiredTime;
     }
 }

@@ -1,13 +1,13 @@
 package com.company;
 
-public class HeadOfDepartment extends WorkForce{
+public final class HeadDepartment extends WorkForce {
 
     private String department;
 
-    public HeadOfDepartment() {
+    public HeadDepartment() {
     }
 
-    public HeadOfDepartment(String department) {
+    public HeadDepartment(String department) {
         this.department = department;
 
     }

@@ -1,39 +1,43 @@
 package com.company;
+import com.company.Interfaces.WorkCheck;
 
-public class Student extends Person{
-    private int group_number;
-    private int record_book_number;
+public final class Student extends Person implements WorkCheck {
+    private int groupNumber;
+    private int recordBook;
     private String specialty;
-    private String form_of_education;
-    private String basis; //form of education
-    private int submitted_works;
+    private String formEducation;
+    private String educationForm; //form of education
+    private int submittedWorks;
+    private int scholarship;
 
     public Student() {
     }
 
-    public Student(int group_number,int record_book_number,String specialty, String form_of_education, String basis, int submitted_works) {
-        this.group_number = group_number;
-        this.record_book_number = record_book_number;
+    public Student(int groupNumber,int recordBook,String specialty, String formEducation, String basis,
+                   int submittedWorks, int scholarship) {
+        this.groupNumber = groupNumber;
+        this.recordBook = recordBook;
         this.specialty = specialty;
-        this.form_of_education = form_of_education;
-        this.basis = basis;
-        this.submitted_works = submitted_works;
+        this.formEducation = formEducation;
+        this.educationForm = basis;
+        this.submittedWorks = submittedWorks;
+        this.scholarship = scholarship;
     }
 
-    public void setGroup_number(int group_number){
-        this.group_number = group_number;
+    public void setGroupNumber(int groupNumber){
+        this.groupNumber = groupNumber;
     }
 
-    public int getGroup_number() {
-        return group_number;
+    public int getGroupNumber() {
+        return groupNumber;
     }
 
-    public void setRecord_book_number(int record_book_number) {
-        this.record_book_number = record_book_number;
+    public void setRecordBook(int recordBook) {
+        this.recordBook = recordBook;
     }
 
-    public int getRecord_book_number() {
-        return record_book_number;
+    public int getRecordBook() {
+        return recordBook;
     }
 
     public void setSpecialty(String specialty) {
@@ -44,36 +48,76 @@ public class Student extends Person{
         return specialty;
     }
 
-    public void setForm_of_education(String form_of_education) {
-        this.form_of_education = form_of_education;
+    public void setFormEducation(String formEducation) {
+        this.formEducation = formEducation;
     }
 
-    public String getForm_of_education() {
-        return form_of_education;
+    public String getFormEducation() {
+        return formEducation;
     }
 
-    public void setBasis(String basis) {
-        this.basis = basis;
+    public void setEducationForm(String educationForm) {
+        this.educationForm = educationForm;
     }
 
-    public String getBasis() {
-        return basis;
+    public String getEducationForm() {
+        return educationForm;
     }
 
-    public void setSubmitted_works(int submitted_works) {
-        this.submitted_works = submitted_works;
+    public void setSubmittedWorks(int submittedWorks) {
+        this.submittedWorks = submittedWorks;
     }
 
-    public int getSubmitted_works() {
-        return submitted_works;
+    public int getSubmittedWorks() {
+        return submittedWorks;
+    }
+
+    public void setScholarship(int scholarship) {
+        this.scholarship = scholarship;
+    }
+
+    public int getScholarship() {
+        return scholarship;
     }
 
     public String toString() {
-        return "group number: " + group_number + "\n" +
-                " record book number: " + record_book_number + "\n" +
+        return "group number: " + groupNumber + "\n" +
+                " record book number: " + recordBook + "\n" +
                 " specialty: " + specialty + "\n" +
-                " form of education: " + form_of_education + "\n" +
-                " basis: " + basis + "\n" +
-                " submitted works: " + submitted_works;
+                " form of education: " + formEducation + "\n" +
+                " basis: " + educationForm + "\n" +
+                " submitted works: " + submittedWorks + "\n" +
+                " scholarship: " + scholarship;
+    }
+
+    @Override
+    public void checkSubmittedWorks() {
+
+        switch (submittedWorks){
+            case 1:
+                System.out.println("The student: " + this.getRecordBook() + " not certified and passed: "
+                        + submittedWorks + " works.");
+                break;
+
+            case 2:
+                System.out.println("The student: " + this.getRecordBook() + " rating: 3 and passed: "
+                        + submittedWorks + " works.");
+                break;
+
+            case 3:
+                System.out.println("The student: " + this.getRecordBook() + " rating: 4 and passed: "
+                        + submittedWorks + " works.");
+                break;
+
+            case 4:
+                System.out.println("The student: " + this.getRecordBook() + " rating: 4+ and passed: "
+                        + submittedWorks + " works.");
+                break;
+
+            default:
+                System.out.println("The student: " + this.getRecordBook() + " rating: 5 and passed: "
+                        + submittedWorks + " works.");
+                break;
+        }
     }
 }

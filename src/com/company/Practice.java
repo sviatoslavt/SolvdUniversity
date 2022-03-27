@@ -1,17 +1,17 @@
 package com.company;
 
-public class Practice extends Lesson{
+public final class Practice extends Lesson{
     private String topic;
     private String task;
-    private String required_time;
+    private String requiredTime;
 
     public Practice() {
     }
 
-    public Practice(String topic,String task,String required_time) {
+    public Practice(String topic,String task,String requiredTime) {
         this.topic = topic;
         this.task = task;
-        this.required_time = required_time;
+        this.requiredTime = requiredTime;
     }
 
     public void setTopic(String topic) {
@@ -28,16 +28,16 @@ public class Practice extends Lesson{
         return task;
     }
 
-    public void setRequired_time(String required_time) {
-        this.required_time = required_time;
+    public void setRequiredTime(String requiredTime) {
+        this.requiredTime = requiredTime;
     }
-    public String getRequired_time() {
-        return required_time;
+    public String getRequiredTime() {
+        return requiredTime;
     }
 
     public String toString() {
         return "topic: " + topic + "\n" +
                 " task: " + task + "\n" +
-                " required time: " + required_time;
+                " required time: " + requiredTime;
     }
 }

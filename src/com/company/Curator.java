@@ -1,26 +1,25 @@
 package com.company;
 
-public class Curator extends Teacher{
-    private int group_number;
+public final class Curator extends Teacher {
+    private int groupNumber;
 
     public Curator() {
     }
 
-    public Curator(int group_number) {
-        this.group_number = group_number;
+    public Curator(int groupNumber) {
+        this.groupNumber = groupNumber;
 
     }
 
-    public void setGroup_number(int group_number){
-        this.group_number = group_number;
+    public void setGroupNumber(int groupNumber){
+        this.groupNumber = groupNumber;
     }
 
-    public int getGroup_number() {
-        return group_number;
+    public int getGroupNumber() {
+        return groupNumber;
     }
 
     public String toString() {
-        return "group number: " + group_number ;
+        return "group number: " + groupNumber;
     }
 }
-

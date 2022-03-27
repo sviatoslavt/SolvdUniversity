@@ -1,19 +1,25 @@
 package com.company;
 
-public class WorkForce extends Person{
+public abstract class WorkForce extends Person{
     private String education;
     private String specialty;
     private String position;
     private int salary;
+    private int experience;
+    private int bonus;
 
     public WorkForce() {
     }
 
-    public WorkForce(String education, String specialty, String position, int salary) {
+    public WorkForce(String education, String specialty, String position, int salary, int experience, int bonus,
+                     String fullName, String birthday, String phoneNumber) {
+        super(fullName, birthday, phoneNumber);
         this.education = education;
         this.specialty = specialty;
         this.position = position;
         this.salary = salary;
+        this.experience = experience;
+        this.bonus = bonus;
     }
 
     public void setEducation(String education) {
@@ -48,6 +54,22 @@ public class WorkForce extends Person{
         return salary;
     }
 
+    public void setExperience(int experience) {
+        this.experience = experience;
+    }
+
+    public int getExperience() {
+        return experience;
+    }
+
+    public void setBonus(int bonus) {
+        this.bonus = bonus;
+    }
+
+    public int getBonus() {
+        return bonus;
+    }
+
     public String toString() {
         return "education: " + education + "\n" +
                 " specialty: " + specialty + "\n" +
@@ -55,5 +77,3 @@ public class WorkForce extends Person{
                 " salary: " + salary;
     }
 }
-
-
