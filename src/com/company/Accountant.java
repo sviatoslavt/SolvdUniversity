@@ -31,7 +31,9 @@ public final class Accountant extends WorkForce implements Stipend {
     @Override
     public int stipendPayment() {
         Student student = new Student(541,234,"Computer science",
-                "Full-time education","State basis",4,0);
+                "Full-time education","State basis",0,0);
+
+        try {
 
         if (student.getSubmittedWorks() <= 3){
             student.setScholarship(0);
@@ -40,6 +42,10 @@ public final class Accountant extends WorkForce implements Stipend {
         else {
             student.setScholarship(1000);
             System.out.println(getFullName() + " reports that " + " student: " + student.getRecordBook() + " gets a scholarship in size: " + student.getScholarship());
+        }
+    }
+        catch (Exception e) {
+            System.out.println("Something went wrong");
         }
         return 0;
     }

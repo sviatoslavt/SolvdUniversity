@@ -93,31 +93,38 @@ public final class Student extends Person implements WorkCheck {
     @Override
     public void checkSubmittedWorks() {
 
-        switch (submittedWorks){
-            case 1:
-                System.out.println("The student: " + this.getRecordBook() + " not certified and passed: "
-                        + submittedWorks + " works.");
-                break;
+        try {
+            switch (submittedWorks){
+                case 1:
+                    System.out.println("The student: " + this.getRecordBook() + " not certified and passed: "
+                            + submittedWorks + " works.");
+                    break;
 
-            case 2:
-                System.out.println("The student: " + this.getRecordBook() + " rating: 3 and passed: "
-                        + submittedWorks + " works.");
-                break;
+                case 2:
+                    System.out.println("The student: " + this.getRecordBook() + " rating: 3 and passed: "
+                            + submittedWorks + " works.");
+                    break;
 
-            case 3:
-                System.out.println("The student: " + this.getRecordBook() + " rating: 4 and passed: "
-                        + submittedWorks + " works.");
-                break;
+                case 3:
+                    System.out.println("The student: " + this.getRecordBook() + " rating: 4 and passed: "
+                            + submittedWorks + " works.");
+                    break;
 
-            case 4:
-                System.out.println("The student: " + this.getRecordBook() + " rating: 4+ and passed: "
-                        + submittedWorks + " works.");
-                break;
+                case 4:
+                    System.out.println("The student: " + this.getRecordBook() + " rating: 4+ and passed: "
+                            + submittedWorks + " works.");
+                    break;
 
-            default:
-                System.out.println("The student: " + this.getRecordBook() + " rating: 5 and passed: "
-                        + submittedWorks + " works.");
-                break;
+                default:
+                    System.out.println("The student: " + this.getRecordBook() + " rating: 5 and passed: "
+                            + submittedWorks + " works.");
+                    break;
+            }
         }
+
+        catch (Exception e) {
+            System.out.println("Something went wrong");
+        }
+
     }
 }

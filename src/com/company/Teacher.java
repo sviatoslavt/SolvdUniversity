@@ -41,13 +41,19 @@ public class Teacher extends WorkForce implements Bonus {
     @Override
     public void checkBonus() {
 
-        if (this.getExperience() <= 4){
-            this.setBonus(400);
-            System.out.println("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
+        try {
+            if (this.getExperience() <= 4){
+                this.setBonus(400);
+                System.out.println("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
+            }
+            else if (this.getExperience() >= 5){
+                this.setBonus(1000);
+                System.out.println("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
+            }
         }
-        else if (this.getExperience() >= 5){
-            this.setBonus(1000);
-            System.out.println("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
+
+        catch (Exception e) {
+            System.out.println("Something went wrong");
         }
     }
 }
