@@ -1,6 +1,7 @@
-package com.company;
+package com.solvd;
 
 public abstract class WorkForce extends Person{
+
     private String education;
     private String specialty;
     private String position;

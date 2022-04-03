@@ -1,10 +1,15 @@
-package com.company;
-import com.company.Interfaces.Bonus;
+package com.solvd;
 
-public class Teacher extends WorkForce implements Bonus {
+import com.solvd.Interfaces.IBonus;
+
+import org.apache.log4j.Logger;
+
+public class Teacher extends WorkForce implements IBonus {
+
+    Logger logger = Logger.getLogger(Main.class);
+
     private String subjects;
     private Department department;
-
 
     public Teacher() {
     }
@@ -41,19 +46,13 @@ public class Teacher extends WorkForce implements Bonus {
     @Override
     public void checkBonus() {
 
-        try {
             if (this.getExperience() <= 4){
                 this.setBonus(400);
-                System.out.println("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
+                logger.info("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
             }
             else if (this.getExperience() >= 5){
                 this.setBonus(1000);
-                System.out.println("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
+                logger.info("Teacher: " + this.getFullName() + " in this year gets a bonus in size: " + getBonus());
             }
         }
-
-        catch (Exception e) {
-            System.out.println("Something went wrong");
-        }
-    }
 }

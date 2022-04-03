@@ -1,6 +1,7 @@
-package com.company;
+package com.solvd;
 
 public abstract class Lesson {
+
     private String nameSubject;
     private int lessonsPerWeek;
     private Teacher teacher;

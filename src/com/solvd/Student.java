@@ -1,7 +1,13 @@
-package com.company;
-import com.company.Interfaces.WorkCheck;
+package com.solvd;
 
-public final class Student extends Person implements WorkCheck {
+import com.solvd.Interfaces.IWorkCheck;
+
+import org.apache.log4j.Logger;
+
+public final class Student extends Person implements IWorkCheck {
+
+    Logger logger = Logger.getLogger(Main.class);
+
     private int groupNumber;
     private int recordBook;
     private String specialty;
@@ -96,34 +102,34 @@ public final class Student extends Person implements WorkCheck {
         try {
             switch (submittedWorks){
                 case 1:
-                    System.out.println("The student: " + this.getRecordBook() + " not certified and passed: "
+                    logger.info("The student: " + this.getRecordBook() + " not certified and passed: "
                             + submittedWorks + " works.");
                     break;
 
                 case 2:
-                    System.out.println("The student: " + this.getRecordBook() + " rating: 3 and passed: "
+                    logger.info("The student: " + this.getRecordBook() + " rating: 3 and passed: "
                             + submittedWorks + " works.");
                     break;
 
                 case 3:
-                    System.out.println("The student: " + this.getRecordBook() + " rating: 4 and passed: "
+                    logger.info("The student: " + this.getRecordBook() + " rating: 4 and passed: "
                             + submittedWorks + " works.");
                     break;
 
                 case 4:
-                    System.out.println("The student: " + this.getRecordBook() + " rating: 4+ and passed: "
+                    logger.info("The student: " + this.getRecordBook() + " rating: 4+ and passed: "
                             + submittedWorks + " works.");
                     break;
 
                 default:
-                    System.out.println("The student: " + this.getRecordBook() + " rating: 5 and passed: "
+                    logger.info("The student: " + this.getRecordBook() + " rating: 5 and passed: "
                             + submittedWorks + " works.");
                     break;
             }
         }
 
         catch (Exception e) {
-            System.out.println("Something went wrong");
+            logger.info("Something went wrong");
         }
 
     }

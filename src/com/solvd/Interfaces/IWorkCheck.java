@@ -1,7 +1,7 @@
-package com.company.Interfaces;
+package com.solvd.Interfaces;
 
 
-public interface WorkCheck {
+public interface IWorkCheck {
 
      void checkSubmittedWorks(); //checking submitted works of student
 

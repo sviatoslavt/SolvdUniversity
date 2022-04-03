@@ -1,6 +1,7 @@
-package com.company;
+package com.solvd;
 
 public abstract class University {
+
     private String universityName;
     private String addressUniversity;
     private int numberSpecialties;
@@ -10,6 +11,7 @@ public abstract class University {
     }
 
     public University(String nameUniversity,String addressUniversity,int numberSpecialties, int numberDepartments) {
+
         this.universityName = nameUniversity;
         this.addressUniversity = addressUniversity;
         this.numberSpecialties = numberSpecialties;

@@ -1,6 +1,7 @@
-package com.company;
+package com.solvd;
 
 public abstract class Person {
+
     private String fullName;
     private String birthday;
     private String phoneNumber;
@@ -10,6 +11,7 @@ public abstract class Person {
     }
 
     public Person(String fullName, String birthday, String phoneNumber) {
+
         this.fullName = fullName;
         this.birthday = birthday;
         this.phoneNumber = phoneNumber;

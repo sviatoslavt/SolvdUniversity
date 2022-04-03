@@ -1,8 +1,12 @@
-package com.company;
+package com.solvd;
 
-import com.company.Interfaces.Stipend;
+import com.solvd.Interfaces.IStipend;
 
-public final class Accountant extends WorkForce implements Stipend {
+import org.apache.log4j.Logger;
+
+public final class Accountant extends WorkForce implements IStipend {
+
+    Logger logger = Logger.getLogger(Main.class);
 
     private String frequencyReporting;
 
@@ -37,15 +41,15 @@ public final class Accountant extends WorkForce implements Stipend {
 
         if (student.getSubmittedWorks() <= 3){
             student.setScholarship(0);
-            System.out.println(getFullName() + " reports that " + "student: " + student.getRecordBook() + " doesn`t get a scholarship.");
+            logger.info(getFullName() + " reports that " + "student: " + student.getRecordBook() + " doesn`t get a scholarship.");
         }
         else {
             student.setScholarship(1000);
-            System.out.println(getFullName() + " reports that " + " student: " + student.getRecordBook() + " gets a scholarship in size: " + student.getScholarship());
+            logger.info(getFullName() + " reports that " + " student: " + student.getRecordBook() + " gets a scholarship in size: " + student.getScholarship());
         }
     }
         catch (Exception e) {
-            System.out.println("Something went wrong");
+            logger.info("Something went wrong");
         }
         return 0;
     }

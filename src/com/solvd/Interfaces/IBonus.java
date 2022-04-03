@@ -1,7 +1,7 @@
-package com.company.Interfaces;
+package com.solvd.Interfaces;
 
 
-public interface Bonus {
+public interface IBonus {
 
     void checkBonus(); //check how much a teacher can receive bonuses
 }

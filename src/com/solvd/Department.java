@@ -1,5 +1,6 @@
-package com.company;
-import com.company.Enums.Specialty;
+package com.solvd;
+
+import com.solvd.Enums.Specialty;
 
 public class Department {
     private String nameDepartment;

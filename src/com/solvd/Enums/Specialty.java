@@ -1,4 +1,4 @@
-package com.company.Enums;
+package com.solvd.Enums;
 
 public enum Specialty {
         ECONOMY("economy"),
