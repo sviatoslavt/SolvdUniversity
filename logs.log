@@ -2,4 +2,10 @@
   2022-04-03 17:10:08 INFO  Main:110 - The student: 234 rating: 3 and passed: 2 works.
   2022-04-03 17:10:08 INFO  Main:51 - Teacher: Mr. John in this year gets a bonus in size: 400
   2022-04-03 17:10:08 INFO  Main:44 - Rosy Adamson reports that student: 234 doesn`t get a scholarship.
+  2022-04-07 22:20:09 ERROR Main:137 - Submitted works cannot be less than 0
+  2022-04-07 22:20:09 INFO  Main:51 - Teacher: Mr. John in this year gets a bonus in size: 400
+  2022-04-07 22:20:09 INFO  Main:44 - Rosy Adamson reports that student: 234 doesn`t get a scholarship.
+  2022-04-07 22:22:51 INFO  Main:112 - The student: 234 rating: 3 and passed: 2 works.
+  2022-04-07 22:22:51 INFO  Main:51 - Teacher: Mr. John in this year gets a bonus in size: 400
+  2022-04-07 22:22:51 INFO  Main:44 - Rosy Adamson reports that student: 234 doesn`t get a scholarship.
   
