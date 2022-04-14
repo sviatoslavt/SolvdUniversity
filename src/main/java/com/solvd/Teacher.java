@@ -16,6 +16,7 @@ public class Teacher extends WorkForce implements IBonus {
 
     public Teacher(String fullName, String education, String specialty, String position, int salary,
                    int experience, int bonus, String birthday, String phoneNumber) {
+
         super(education, specialty, position, salary, experience, bonus, fullName, birthday, phoneNumber);
         this.subjects = subjects;
         this.department = department;

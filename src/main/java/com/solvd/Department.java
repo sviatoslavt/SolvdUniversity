@@ -3,6 +3,7 @@ package com.solvd;
 import com.solvd.Enums.Specialty;
 
 public class Department {
+
     private String nameDepartment;
     private Specialty specialty;
     private int numberGroups;

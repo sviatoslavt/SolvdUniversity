@@ -1,12 +1,14 @@
 package com.solvd;
 
 public final class Curator extends Teacher {
+
     private int groupNumber;
 
     public Curator() {
     }
 
     public Curator(int groupNumber) {
+
         this.groupNumber = groupNumber;
 
     }

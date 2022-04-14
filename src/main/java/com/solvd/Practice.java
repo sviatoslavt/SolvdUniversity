@@ -1,6 +1,6 @@
 package com.solvd;
 
-public final class Practice extends Lesson{
+public final class Practice extends Lesson {
 
     private String topic;
     private String task;

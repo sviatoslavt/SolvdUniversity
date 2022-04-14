@@ -87,7 +87,6 @@ public final class Student extends Person implements IWorkCheck {
         return scholarship;
     }
 
-
     public String toString() {
         return "group number: " + groupNumber + "\n" +
                 " record book number: " + recordBook + "\n" +

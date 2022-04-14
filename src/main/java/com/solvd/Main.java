@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
 
        Student student1 = new Student(541,234,"Computer science",
-               "Full-time education","State basis",2,0);
+               "Full-time education","State basis",1,0);
        student1.checkSubmittedWorks();
 
        Teacher teacher1 = new Teacher("Mr. John", "Higher",

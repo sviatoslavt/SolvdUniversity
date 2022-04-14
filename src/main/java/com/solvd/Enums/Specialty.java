@@ -1,6 +1,7 @@
 package com.solvd.Enums;
 
 public enum Specialty {
+        
         ECONOMY("economy"),
         MARKETING("marketing"),
         COMPUTER_SCIENCE("computer science"),

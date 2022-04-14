@@ -6,7 +6,6 @@ public abstract class Person {
     private String birthday;
     private String phoneNumber;
 
-
     public Person() {
     }
 

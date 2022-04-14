@@ -15,6 +15,7 @@ public final class Accountant extends WorkForce implements IStipend {
 
     public Accountant(String frequencyReporting, String education, String specialty, String position,
                       int salary, int experience, int bonus, String fullName, String birthday, String phoneNumber) {
+
         super(education, specialty, position, salary, experience, bonus, fullName, birthday, phoneNumber);
         this.frequencyReporting = frequencyReporting;
 
