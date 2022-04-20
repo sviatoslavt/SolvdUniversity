@@ -1,7 +1,9 @@
 package com.solvd;
 
+import com.solvd.Enums.Speciality;
 import com.solvd.Interfaces.IStipend;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
 public final class Accountant extends WorkForce implements IStipend {
@@ -35,11 +37,10 @@ public final class Accountant extends WorkForce implements IStipend {
 
     @Override
     public int stipendPayment() {
-        Student student = new Student(541,234,"Computer science",
+        Student student = new Student(541,234, Speciality.COMPUTER_SCIENCE,
                 "Full-time education","State basis",0,0);
 
         try {
-
         if (student.getSubmittedWorks() <= 3){
             student.setScholarship(0);
             LOGGER.info(getFullName() + " reports that " + "student: " + student.getRecordBook() + " doesn`t get a scholarship.");

@@ -1,6 +1,6 @@
 package com.solvd;
 
-public abstract class University {
+public class University {
 
     private String universityName;
     private String addressUniversity;

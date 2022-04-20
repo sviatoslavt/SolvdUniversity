@@ -1,11 +1,11 @@
 package com.solvd;
 
-import com.solvd.Enums.Specialty;
+import com.solvd.Enums.Speciality;
 
 public class Department {
 
     private String nameDepartment;
-    private Specialty specialty;
+    private Speciality specialty;
     private int numberGroups;
 
     public Department() {
@@ -13,7 +13,7 @@ public class Department {
 
     public Department(String nameDepartment, String specialty, int numberGroups) {
         this.nameDepartment = nameDepartment;
-        this.specialty = Specialty.valueOf(specialty);
+        this.specialty = Speciality.valueOf(specialty);
         this.numberGroups = numberGroups;
     }
 
@@ -25,12 +25,12 @@ public class Department {
         return nameDepartment;
     }
 
-    public void setSpecialty(String specialty) {
-        this.specialty = Specialty.valueOf(specialty);
+    public void setSpecialty(Speciality specialty) {
+        this.specialty = specialty;
     }
 
-    public String getSpecialty() {
-        return String.valueOf(specialty);
+    public Speciality getSpecialty() {
+        return specialty;
     }
 
     public void setNumberGroups(int numberGroups) {

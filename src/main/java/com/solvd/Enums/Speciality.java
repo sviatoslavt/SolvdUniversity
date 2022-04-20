@@ -1,6 +1,6 @@
 package com.solvd.Enums;
 
-public enum Specialty {
+public enum Speciality {
         
         ECONOMY("economy"),
         MARKETING("marketing"),
@@ -10,7 +10,7 @@ public enum Specialty {
 
         private final String value;
 
-        Specialty(String value){
+        Speciality(String value){
                 this.value = value;
         }
 

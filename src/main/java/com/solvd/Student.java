@@ -1,5 +1,6 @@
 package com.solvd;
 
+import com.solvd.Enums.Speciality;
 import com.solvd.Exception.SubmittedWorksLessZero;
 import com.solvd.Interfaces.IWorkCheck;
 
@@ -11,7 +12,7 @@ public final class Student extends Person implements IWorkCheck {
 
     private int groupNumber;
     private int recordBook;
-    private String specialty;
+    private Speciality specialty;
     private String formEducation;
     private String educationForm; //form of education
     private int submittedWorks;
@@ -20,7 +21,7 @@ public final class Student extends Person implements IWorkCheck {
     public Student() {
     }
 
-    public Student(int groupNumber,int recordBook,String specialty, String formEducation, String basis,
+    public Student(int groupNumber,int recordBook,Speciality specialty, String formEducation, String basis,
                    int submittedWorks, int scholarship) {
         this.groupNumber = groupNumber;
         this.recordBook = recordBook;
@@ -47,11 +48,11 @@ public final class Student extends Person implements IWorkCheck {
         return recordBook;
     }
 
-    public void setSpecialty(String specialty) {
+    public void setSpecialty(Speciality specialty) {
         this.specialty = specialty;
     }
 
-    public String getSpecialty() {
+    public Speciality getSpecialty() {
         return specialty;
     }
 
